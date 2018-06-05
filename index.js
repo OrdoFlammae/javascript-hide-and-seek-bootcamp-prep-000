@@ -3,11 +3,11 @@ function getFirstSelector(selector) {
 }
 
 function nestedTarget() {
-  return document.getElementById('nested').getElementsByClass('target')[0];
+  return document.getElementById('nested').getElementsByClassName('target')[0];
 }
 
 function increaseRankBy(n) {
-  var ranks = document.getElementsByClass('ranked-list');
+  var ranks = document.getElementsByClassName('ranked-list');
   
   for (var i = 0; i < ranks.length; i++) {
     ranks[i].innerHTML = parseInt(ranks[i].innerHTML) + n;
